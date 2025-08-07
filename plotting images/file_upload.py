@@ -61,7 +61,10 @@ def extract_and_plot_vertices(image_path, epsilon_ratio=0.01):
 
 # Show Images
 vertices = extract_and_plot_vertices("min_link_shape.png")  # < -- filename
-print("Vertices (x, y):", vertices)
+print("Boundary Coordinates (x, y):")
+for x, y in vertices:
+    print(f"({int(x)}, {int(y)})")
+
 
 
 
