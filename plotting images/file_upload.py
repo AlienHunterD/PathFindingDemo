@@ -65,7 +65,13 @@ print("Boundary Coordinates (x, y):")
 for x, y in vertices:
     print(f"({int(x)}, {int(y)})")
 
+# Save to TXT file
+output_file = "vertices_output.txt"
+with open(output_file, "w") as f:
+    for x, y in vertices:
+        f.write(f"{int(x)}, {int(y)}\n")
 
+print(f"Vertices saved to {output_file}")
 
 
 
